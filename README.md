@@ -186,7 +186,7 @@ El cual tendrá que pasar por el archivo, Posta.js, en el cual se encuentra el m
 
 <h3> <b> Resultado </b> </h3>
 
-Para posteriormente, regresar con la información y desplegarla a usuario dentro de la aplicación Postman. El cual realizo el comando
+Para posteriormente, regresar con la información y desplegarla a usuario dentro de la aplicación Postman. El cual realizo el comando de la siguiente consulta
 **Db.postal.find({_id: 5cbf9f4d5476ba2a647b6ab0})**
 
 ![Evidencia](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20PostID/Evidencia.png)
