@@ -1,2 +1,2 @@
-# MVC_POSTAL
-Proyecto MVC_POSTALES, con respectiva documentación
+<H1 align="center"> MVC_POSTAL </H1>
+
