@@ -100,24 +100,42 @@ En el que comenzara con la conexión a la base de datos, para poder así realiza
 
 <H2> Consulta Postal </H2>
 
+<ul>
+ <li type="circle"> Configuración de URL en Postman </li>
+ <li type="circle"> Archivo App.js </li>
+ <li type="circle"> Archivo Admin.js </li>
+ <li type="circle"> Archivo Postal.js </li>
+ <li type="circle"> Resultado </li>
+</ul> 
+
+<h3> <b> Configurción de URl en Postman </b> </h3>
+
 Una vez realizado la conexión con la base de datos, se comenzará con la realización de la primera prueba, la cual consta, de una búsqueda de toda la colección Postal.
 Por lo que se abrirá la aplicación Postman, en la que, dentro del apartado de URL, se escribirá lo siguiente:
 **localhost:3000/api/postales/**
 
 ![URL](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20Postal/URL.png)
 
+<h3> <b> Archivo App.js </b> </h3>
+
 Donde posterior se continuará con él envió de la petición, conforme la URL, solicitada dentro de la URL.
 La cual la petición pasa por el archivo App.js, el cual, identifica el nombre de la petición, que esta previamente definida dentro del archivo, para así enviarlo al siguiente archivo js, para la búsqueda de instrucciones.
 
 ![App](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20Postal/App.png)
 
+<h3> <b> Archivo Admin.js </b> </h3>
+
 Donde lo redirige a el archivo Admin.js, en el cual contiene la consulta y las instrucciones que realizara dicha petición.
 
 ![Admin](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20Postal/Admin.png)
 
+<h3> <b> Archivo Postal.js </b> </h3>
+
 Para ello pasa por el archivo Postal.js, en la que se especifica un modelo de la base de datos, para hacer más efectiva la búsqueda dentro de la base de datos, con el uso de la librería Mongoose, de igual manera se especifica, la colecciona a la que realizara la conexión y obtención de información.
 
 ![Postal](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20Postal/Postal.png)
+
+<h3> <b> Resultado </b> </h3>
 
 Donde una vez conociendo las instrucciones de la petición a realizar, se conecta a la base de datos de nuestra nube, en la que ejecutará la consulta definida dentro del archivo Admin.js, donde una vez obtenida la información la despliega al usuario, dentro del programa Postman. El cual realiza una consulta general de todos los datos dentro de la colección Postal.
 **Db.postal.find()**
@@ -128,23 +146,41 @@ Donde una vez conociendo las instrucciones de la petición a realizar, se conect
 
 <H2> Consulta PostaById </H2>
 
+<ul>
+ <li type="circle"> Configuración de URL en Postman </li>
+ <li type="circle"> Archivo App.js </li>
+ <li type="circle"> Archivo Admin.js </li>
+ <li type="circle"> Archivo Postal.js </li>
+ <li type="circle"> Resultado </li>
+</ul> 
+
+<h3> <b> Configuración de URL en Postman</b> </h3>
+
 En la siguiente consulta, se realizará una búsqueda con condición, en la que, en este caso, mostrará los objetos, que contengan, el Id, que sea introducido por el usuario dentro del apartado de URL en la aplicación Postman. 
 Para el siguiente ejemplo de tomar la siguiente ID: **5cbf9f4d5476ba2a647b6ab0**. Para ello se tendrá que escribir lo siguiente dentro del apartado de la URL:
 **localhost:3000/api/postales/5cbf9f4d5476ba2a647b6ab0**
 
 ![Url](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20PostID/Url.png)
 
+<h3> <b> Archivo App.js </b> </h3>
+
 Donde posterior, la información pasa por el archivo App.js, donde se encuentra con el nombre correspondiente, previamente definido, para conectarlo con el siguiente archivo.
 
 ![App](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20PostID/App.png)
+
+<h3> <b> Archivo Admin.js </b> </h3>
 
 Donde una vez identificado, el nombre lo enlaza con el archivo Admin.js, en el que se encuentran definidas las consultas e instrucciones de cada uno de los nombres, en este caso se hará uso del siguiente:
 
 ![Admin](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20PostID/Admin.png)
 
+<h3> <b> Archivo Postal.js </b> </h3>
+
 El cual tendrá que pasar por el archivo, Posta.js, en el cual se encuentra el modelo, de la base de datos, para la identificación de las colecciones y documentos, dentro de la nube.
 
 ![Postal](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20PostID/Postal.png)
+
+<h3> <b> Resultado </b> </h3>
 
 Para posteriormente, regresar con la información y desplegarla a usuario dentro de la aplicación Postman. El cual realizo el comando
 **Db.postal.find({_id: 5cbf9f4d5476ba2a647b6ab0})**
@@ -155,22 +191,41 @@ Para posteriormente, regresar con la información y desplegarla a usuario dentro
 
 <H2> Consulta PostalByCode </H2>
 
+<ul>
+ <li type="circle"> Configuración de URL en Postman </li>
+ <li type="circle"> Archivo App.js </li>
+ <li type="circle"> Archivo Admin.js </li>
+ <li type="circle"> Archivo Postal.js </li>
+ <li type="circle"> Resultado </li>
+</ul> 
+
+
+<h3> <b> Configuración de URL en Postman </b> </h3>
+
 La siguiente consulta, tiene por fin, realizar una consulta, mediante una condición, la cual es desplegar, aquellos objetos que tengan por igual, mismo código postal, ingresado por el usuario, para este ejemplo, tomaremos el siguiente código postal:**50994**, donde dentro del apartado de URL, se introducirá lo siguiente:
 **localhost:3000/api/postales/ciudades/50994**
 
 ![Url](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20PostCodCity/Url.png)
 
+<h3> <b> Archivo App.js </b> </h3>
+
 Donde pasará por el archivo App.js, para la búsqueda del nombre, con el que fue especificado previamente.
 
 ![App](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20PostCodCity/App.png)
+
+<h3> <b> Archivo Admin.js </b> </h3>
 
 Para posteriormente, dirigirse al archivo, Admin.js, en el que se especificaran las instrucciones de la consulta, que se realiará.
 
 ![Admin](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20PostCodCity/Admin.png)
 
+<h3> <b> Archivo Postal </b> </h3>
+
 Posteriormente se dirigirá al archivo Postal.js, en el que encuentra, el modelo de la base de datos, conforme a las necesidades de las consultas que realizaremos, dentro de nuestras colecciones.
 
 ![Postal](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20PostCodCity/Postal.png)
+
+<h3> <b> Resultado </b> </h3>
 
 Finalmente, retornara con la información encontrada, para su despliegue con el usuario dentro de la aplicación Postman, mediante el comando:
 **Db.postal.find({d_codigo:50994})**
@@ -181,23 +236,41 @@ Finalmente, retornara con la información encontrada, para su despliegue con el 
 
 <H2> Consulta PostalCity </H2>
 
+<ul>
+ <li type="circle"> Configuración de URL en Postman </li>
+ <li type="circle"> Archivo App.js </li>
+ <li type="circle"> Archivo Admin.js </li>
+ <li type="circle"> Archivo Postal.js </li>
+ <li type="circle"> Resultado </li>
+</ul> 
+
+<h3> <b> Configuración de URL en Postman </b> </h3>
+
 En la siguiente consulta, se realizará una consulta, en la que se pretende listar, las ciudades que se encuentran registradas dentro de nuestra colección Postal,
 Para ello dentro de la URL, en la aplicación Postman, se escribirá la siguiente línea:
 **localhost:3000/api/ciudades**
 
 ![Url](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20PostCity/Url.png)
 
+<h3> <b> Archivo App.js</b> </h3>
+
 Donde pasará por el archivo App.js, en el que buscará, el mismo nombre con el que fue insertado por el usuario.
 
 ![App](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20PostCity/App.png)
+
+<h3> <b> Archivo Admin.js </b> </h3>
 
 Una vez encontrado, el nombre lo redirigirá al archivo Admin.js, en el que se encontrará con las instrucciones que realizará dentro de la base de datos.
 
 ![Admin](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20PostCity/Admin.png)
 
+<h3> <b> Archivo Postal.js </b> </h3>
+
 Posteriormente, se conecta con el archivo Postal.js, para obtener la información de modelo, en el que se basará para la obtención de la información, así como la colección a la que accederá.
 
 ![Postal](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20PostCity/Postal.png)
+
+<h3> <b> Resultado </b> </h3>
 
 Una vez realizado, se dirige ala base de datos, en la que, obtiene la información de la colección correspondiente, y posterior regresa, para el despliegue al usuario dentro de la aplicación Postman.
 
