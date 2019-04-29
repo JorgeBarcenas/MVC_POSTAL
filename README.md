@@ -1,7 +1,7 @@
 <H1 align="center"> MVC_POSTAL </H1>
 <H1 align="center"> Ciencia de Datos </H1>
 
-*En el presente repositorio, se encuentra el código correspondiente al proyecto MVC_Tour, donde de igual manera, se encuentra el archivo MD, **MVC_Tour**, el cual contiene, la documentación pertienente del proyecto.*
+*En el presente repositorio, se encuentra el código correspondiente al proyecto MVC_Postal, donde de igual manera, se encuentra el archivo MD, **MVC_Postal**, el cual contiene, la documentación pertienente del proyecto.*
 
 <hr>
 
