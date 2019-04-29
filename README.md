@@ -113,6 +113,8 @@ En el que comenzara con la conexión a la base de datos, para poder así realiza
 Una vez realizado la conexión con la base de datos, se comenzará con la realización de la primera prueba, la cual consta, de una búsqueda de toda la colección Postal.
 Por lo que se abrirá la aplicación Postman, en la que, dentro del apartado de URL, se escribirá lo siguiente:
 **localhost:3000/api/postales/**
+La cual consiste en **localhost** nombre de nuestro servidor, seguido de **3000** el cual es el puerto por el que se transmite información dentro de la aplicación Postman, **api/postales** el cual es el nombre con el que se manda a llamar las instrucciones de la consulta, la cual realizara una conexión general a la base de datos.
+
 
 ![URL](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20Postal/URL.png)
 
@@ -159,6 +161,8 @@ Donde una vez conociendo las instrucciones de la petición a realizar, se conect
 En la siguiente consulta, se realizará una búsqueda con condición, en la que, en este caso, mostrará los objetos, que contengan, el Id, que sea introducido por el usuario dentro del apartado de URL en la aplicación Postman. 
 Para el siguiente ejemplo de tomar la siguiente ID: **5cbf9f4d5476ba2a647b6ab0**. Para ello se tendrá que escribir lo siguiente dentro del apartado de la URL:
 **localhost:3000/api/postales/5cbf9f4d5476ba2a647b6ab0**
+Que consiste en **localhost** nombre de nuestro servidor, seguido de **3000** el cual es el puerto por el que se transmite información dentro de la aplicación Postman, **api/postales5cbf9f4d5476ba2a647b6ab0** el cual es el nombre con el que se manda a llamar las instrucciones de la consulta, la cual consiste en una busqueda especifica por una condición.
+
 
 ![Url](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20PostID/Url.png)
 
@@ -204,6 +208,7 @@ Para posteriormente, regresar con la información y desplegarla a usuario dentro
 
 La siguiente consulta, tiene por fin, realizar una consulta, mediante una condición, la cual es desplegar, aquellos objetos que tengan por igual, mismo código postal, ingresado por el usuario, para este ejemplo, tomaremos el siguiente código postal:**50994**, donde dentro del apartado de URL, se introducirá lo siguiente:
 **localhost:3000/api/postales/ciudades/50994**
+La cual consiste en **localhost** nombre de nuestro servidor, seguido de **3000** el cual es el puerto por el que se transmite información dentro de la aplicación Postman, **api/postales/ciuadades/50994** el cual es el nombre con el que se manda a llamar las instrucciones de la consulta, en la que se pretende encontrar las ciudades con el mismo codico postal, la cual es una consulta con condición.
 
 ![Url](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20PostCodCity/Url.png)
 
@@ -249,6 +254,7 @@ Finalmente, retornara con la información encontrada, para su despliegue con el 
 En la siguiente consulta, se realizará una consulta, en la que se pretende listar, las ciudades que se encuentran registradas dentro de nuestra colección Postal,
 Para ello dentro de la URL, en la aplicación Postman, se escribirá la siguiente línea:
 **localhost:3000/api/ciudades**
+La cual consiste en **localhost** nombre de nuestro servidor, seguido de **3000** el cual es el puerto por el que se transmite información dentro de la aplicación Postman, **api/ciudades** el cual es el nombre con el que se manda a llamar las instrucciones de la consulta, la cual realizara una busqueda en lista de todas las ciudades que se encuentran registradas dentro de nuestra colección Postales, sin repetir, las ciudades.
 
 ![Url](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Consulta%20PostCity/Url.png)
 
