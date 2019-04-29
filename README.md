@@ -1,10 +1,10 @@
 <H1 align="center"> MVC_POSTAL </H1>
-<H1 align="center"> Ciencia de Datos </H1>
 
 *En el presente repositorio, se encuentra el código correspondiente al proyecto MVC_Postal, donde de igual manera, se encuentra el archivo MD, **MVC_Postal**, el cual contiene, la documentación pertienente del proyecto.*
 
 <hr>
 
+<H1> Prerequisitos </H1>
 <H2> Creación de Cuenta MongoDB Atlas </H2>
 
 Para comenzar, se tendrá que acceder a la página oficial de **MongoDB Atlas**, en la que se tendrá que registrar una nueva cuenta. <a href="https://cloud.mongodb.com/"> Dar clic para dirigirse a página oficial Mongo DB Atlas </a>
@@ -13,7 +13,7 @@ Donde una vez creada la cuenta, se accederá a ella y se realizaran, los pasos g
 
 ![Página_Proyecto](https://raw.githubusercontent.com/JorgeBarcenas/MVC/master/Git/Ambientacion/Usuario.PNG)
 
-Donde nos dirigeremos a la pestaña **Security**, donde en la parte superior derecho, abra un botón verde, qel cual dirá **Add new user**, donde se dará clic en el y se creará un usuario con privilegios de **Administrador**. En este caso se crea usuario administrador “ROOT”, con su respectiva contraseña “TOOR”, donde dicho administrador, cuenta con los permisos de poder editar cualquier colección de cualquier base de datos que almacene Cloud.
+Donde nos dirigeremos a la pestaña **Security**, donde en la parte superior derecho, abra un botón verde, qel cual dirá **Add new user**, donde se dará clic en el y se creará un usuario con privilegios de **Administrador**. En este caso se crea usuario administrador, con su respectiva contraseña, donde dicho administrador, cuenta con los permisos de poder editar cualquier colección de cualquier base de datos que almacene Cloud.
 
 ![Contraseña](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Ambientacion/Usuariocreado.png)
 
@@ -89,7 +89,7 @@ El cual consta de el usuario y contraseña de nuestro administrador, de nuestra 
 
 <H2> Comando Node </H2>
 
-Una vez realizado la configuración correspondiente, se continuará abriendo una terminal dentro la aplicación Visual Studio Code, en el que se posicionará dentro de la carpeta en la que se encuentra, nuestros archivos correspondientes al proyecto Postal y se escribirá el siguiente comando:
+Una vez realizado la configuración correspondiente, se continuará abriendo una terminal dentro la aplicación Visual Studio Code, en el que se posicionará dentro de la carpeta en la que se encuentra, nuestros archivos correspondientes al proyecto Postal y se escribirá el siguiente comando para la compilación del archivo:
 **Node app.js**
 
 ![Node](https://raw.githubusercontent.com/JorgeBarcenas/Data-Mining-and-Data-Warehousing/master/Git/Key_Confg/Node.png)
